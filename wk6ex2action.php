@@ -1,8 +1,8 @@
 <?php
 
-  $id = $_GET['ID'];
+  $id = $_GET['id'];
   //Cookie to save id
-  setcookie('ID', $id);
+  setcookie('id', $id);
 	// Connect to server and select database
   $servername = 'localhost';
   $db_name = 'abduldb';
@@ -22,6 +22,7 @@
   $result = mysqli_query($conn, $sql);
 	$row = mysqli_fetch_assoc($result);
 ?>
+
 <html>
 <body>
 <form action="wk6ex2action2.php" method="post">
