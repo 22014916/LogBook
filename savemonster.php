@@ -5,7 +5,7 @@
   $username = 'root';
   $password = '';
 
-  $conn = mysqli_connect($servername, $username, $password, $db_name);
+  $connect = mysqli_connect($servername, $username, $password, $db_name);
 
   // Obtain the file sent to the server within the response.
   $image = $_FILES['monsterimage']['tmp_name'];
@@ -23,7 +23,7 @@
   $sql .= "VALUES ('$name', '$imagedata','$audiodata');";
 
 
-  $result = mysqli_query($conn, $sql);
+  $result = mysqli_query($connect, $sql);
 
-  mysqli_close($conn);
+  mysqli_close($connect);
 ?>
