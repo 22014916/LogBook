@@ -3,7 +3,7 @@
   header("Content-type: image/jpeg");
 
   $servername = 'localhost';
-  $db_name = 'monster';
+  $db_name = 'abduldb';
   $username = 'root';
   $password = '';
 
